@@ -1,0 +1,181 @@
+---] 1 - Cybersecurity Definitions
+
+NIST defines cybersecurity or information security as:
+> The protection of information systems from unauthorized:
+> - access,
+> - use,
+> - disclosure,
+> - disruption,
+> - modification, or
+> - destruction
+>  in order to provide confidentiality, integrity and availability.
+
+These three principles of Confidentiality, Integrity and Availability
+are known as the **CIA Triad**.
+
+- Confidentiality: is synonymous with privacy. Confidentiality measures
+  prevent data from falling into the hands of people who do not have
+  authorization to access said information;
+- Integrity: is about making sure information is accurate and
+  always remains the same;
+- Availability: is about keeping system working and requires routine
+  maintenance and upgrading of hardware, software and operating system
+  environments;
+
+---] 1.1 - Main Terms
+
+Four key terms are:
+- Vulnerability, a flaw, loophole, oversight, or error that can be exploited
+  to violate a system security policy;
+- Threat, is an event, natural or man-made, able to cause negative impact
+  to an organization, like a hurricane, a fire or an hacker;
+- Expoit, is a defined way to breach the security of an IT system through
+  a vulnerability;
+- Risk, it is a situation involving exposure to danger, or the likelihood
+  of a vulnerability to be exploited;
+
+---] 1.2 Security Threats
+
+
+                             Security Threats
+                                     |
+                                     |
+                                     |
+             +-----------------------+---------------------+
+             |                                             |
+             v                                             v
+         Human Factors                               Natural Factors
+             |                                             |
+             +---------------------------+                 v
+             |                           |       Hurricane/Floods/Tsunami
+             v                           v
+     Internal Factors            External Threats 
+             |                           |
+     +-------+-----------+               v
+     |                   |       Malicious Events
+     v                   v               |
+  Former              Current            v
+  Employees           Employees   Hackers/Crackers
+                                         |
+                                         v
+                                 Virus/Trojans/Worms
+
+                         Fig. 1 Security Threats
+
+Please, note that many if not most threats come from the inside (Internal Factors).
+
+
+---] 1.3 - Vulnerability Assessment
+
+A vulnerability assessment is the process of identifying,
+analyzing, and ranking vulnerabilities in a specific environment.
+
+
+---] 1.4 - Roles in Cybersecurity
+
+Here we report a common list of roles used by companies involved with
+cybersecurity. Note that although the list tries to be as general as
+possible, many companies adopt custom role names.
+
+- CISO (Chief Information Security Officer),
+  this is a fairly new role and was created to make sure
+  there is a head and someone in charge of the information
+  security division to supervise and be the leader of the
+  infosec tower;
+
+- Information Security Architect;
+
+- Information Security Consultant/Specialist;
+
+- Information Security Analyst,
+  this is the day-to-day person in charge of conducting basic
+  information security assessments and more specifically analyzing
+  the events, alerts, alarms and any information that could be
+  useful to identify any threats that could compromise the
+  organization. So basically it gets events from a SIEM
+  and conducts an investigation to understand what it is
+  about and how to prevent the alert from popping up, e.g.,
+  modifying IPS/IDS configuration;
+
+- Information Security Auditor,
+  this person checks if a computer systems is following the best
+  practices outlined by standards, such as ISO-27001 or ISO27002;
+
+- Security Software Developer;
+
+- Penetration Tester / Ethical Hacker (part of the red team);
+
+- Vulnerability Assessor;
+
+- Digital Forensic Analyst (part of the blue team);
+
+- SIEM Engineer (part of the blue team),
+  the person responsible for the tuning and configuration
+  of a SIEM platform;
+
+
+---] 1.4 - History of Cybersecurity
+
+The main major factors that contributed to the rise
+of cybersecurity during history are:
+- Reagan
+- 9/11
+- Pervasive use of technology (everybody with a phone)
+
+Everything started with Ronald Reagan a US president that also was a
+Hollywood actor. Reagan asked to his security advisor if what he saw on
+"Wargames" could be real.  Reagan powers the NSA and other commands in
+the US to deal with the cyberspace.
+Ronald Reagan was the first American president who recognized the
+need for a national policy on cybersecurity.
+
+Then, the government started to think about how to avoid another 9/11,
+Peal Harbor in the US.  But also how to avoid damage to fundamentala
+infrastructures.
+Note that many of the cybersecurity operations deployed by the US
+government like STUXNET or mass-surveillance programs was because of
+the 9/11 twin towers attack.
+
+At the end, the pervasive use of technology boosted again the interest
+in cybersecurity, being the third major factor that contributed to the
+rise of cybersecurity attention in the US, also because not only it means
+that anybody can be vulnerable but also that anybody could potentially
+start an attack.
+
+
+---] 1.5 - Early Operation Attempts and Some Victories
+
+- Clipper Chip, chip developed by NSA that should have been used by
+  phone companies to encrypt communications,
+  but never really used and cancelled in 1996. The main cause was that
+  it was proprietary and most likely vulnerable.
+- Moonlight Maze, was a 1999 US government investigation into a massive
+  data breach of classified information coming from a MainFrame in
+  Moscow. Moonlight Maze represents one of the first widely known
+  cyber-espionage campaigns in world history. I
+- Solar Sunrise, another investigative operation by US after an advanced
+  attack to important US departments, the attackers were two teens from
+  California and an israeli hacker (known as "the analyzer" or "pink pony"),
+  around 2000.
+- Buckshoot Yankee, this is the most significant breach by US military
+  systems, which was deployed as a series of compromises in 2008.
+  The attackers used a trojan known as "Agent.BTZ" which stayed on the systems
+  for 14 months. Nobody understood where the attack came from, but an hypothesis
+  says from China.
+- Desert Storm, this was a real military operation but comprehending a cyber
+  component, early '90s.
+- Bosnia, this was a real military operation but comprehending a cyber
+  component, early '90s.
+
+
+---] 1.6 - Cybersecurity Today in Numbers
+
+- Every year we have more or less 10k of newly found vulnerabilities;
+- Cybercrime costs about 100 bilions of USD only in the US;
+- Every year about 400 bilions of USD are spent for cyberattacks around the world;
+- In 2019 the data lost cost was about 2.1 bilions of dollars;
+
+To have some yearly numbers about cybersecurity we can use the:
+"X-Force Threat Intelligence Index", which is a yearly report.
+
+
