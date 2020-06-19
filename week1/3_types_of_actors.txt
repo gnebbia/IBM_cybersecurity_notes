@@ -1,0 +1,503 @@
+Types of actors and motivations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--] 1 - Actors and Motivations
+
+The **actors** involved within cyber attacks can be summarized as:
+
+- Internal Users
+    They are still the most likely to cause security problems,
+    whether intentional or not. Loss and sale of information
+    is the most normal, along with the installation of malware
+- Hackers (pay or not)
+    These are attackers that may be paid by private or public
+    organizations. Or simply someone with enough knowledge and
+    time to bother
+- Hacktivism
+    Similar to governments but usually do not have much financial
+    power. Normally they reveal sensitive or confidential information
+    to the public and carry out DDoS campaign
+- Governments
+    They have enough power to cause very large financial and operational
+    losses, it is normal to attack infrastructure, spy and monitor
+    important politicians and are the most used APT (advanced
+    persistent threat)
+
+**Motivations** can be summarized as:
+- Just play
+    Demonstrate the capabilities of the individual/group
+    on the hackers community
+- Gain money
+    In conjunction with governments or criminal organizations
+- Political action and movements
+    Make a statement or fight for a specific reason
+- Hire me
+    Demonstrate what can I do for somebody to hire me or use my
+    services
+
+
+--] 2 - Major Cyber-Crime and Hacking Organizations
+
+Here we describe the major hacking organizations operating
+currently worldwide.
+
+For what concerns, hacktivism, cybercrime and hacking organizations,
+the famous groups include
+- Fancy Bears, involved with the US election hack
+- Laser Group
+- Anonymous
+- LulzSec
+- CCC (Chaos Computer Club)
+- Syrian Electronic Army
+- Guardians of Peace, involved with the NK Sony hack
+
+The most common government actors are:
+- Tailored Access Operation (US),
+- NSA (US)
+- Unit 61398 (Israel)
+- Unit 8200 (China)
+
+
+
+--] 3 - Major Cyber Attacks in recent years
+
+- 2011 - Sony Hack, playstation network hack by Lulz
+- 2013 - Singapore Cyberattacks, as a protest mechanic
+- 2014 - Multiple Hacks, Ebay, HomeDepot, UBISOFT, LinkedIn, Gobiernos
+- 2015 - Target Stores, more than 100 milion of credit cards leaked
+- 2016 - Year of Hacks, US Election attack, DYN (with Mirai), CNN,
+         EEUU, FB, Netflix, Twitter, TESCO
+- 2017 - More Hacks, NSA, EMOTET, Wannacry, Jaff, Shadow Brokers, EternalRocks
+
+What tools where they using?
+
+- SeaDaddy and SeaDuke (Cyberbears US Election)
+- BlackEnergy 3.0 (Russian Hackers), used for SCADA, PLCs, ICS
+    targeting Ukraine
+- Shamoon (Iran Hackers)
+- Duqu and Flame (Olympic Games US and Israel)
+- DarkSeoul (Lazarous and North Korea)
+- WannaCry (Lazarous and North Korea)
+
+
+--] 4 - Security Attacks
+
+Here we follow Stallings and ITU X.800 definitions.
+
+An attack is an action by a human with intent to violate
+security.
+It does not matter if the attack succeeds it is still
+considered an attack even if it fails.
+
+Security attacks can be broadly classified into
+Passive and Active attacks.
+
+We can distinguish between:
+- Passive Attacks (hard to detect)
+    - such as eavesdropping or traffic pattern analysis
+    - they can run for years
+- Active Attacks (easier to detect, but difficult to prevent)
+    - explicit interception and modification
+    - several classes of these attacks exist but generally involve:
+        - masquerade (aka spoofing),
+            An opponent impersonates a known or authorized person or
+            system. Here there is a violation on identification
+            and authentication
+            This is an attack to confidentiality
+        - replay
+            A copy of a legitimate message is captured by an opponnent
+            and re-transmitted. This is an attack on the integrity of the
+            system's data.
+            These represent MiTM attacks, where valid data transmission is maliciously 
+            or fraudulently repeated or delayed
+            This is an attack to integrity
+        - modification
+            The content of a legitimate message is altered.
+            An instance of this can be MiTM attacks with modification.
+            This is an attack to integrity
+        - denial of service
+            an opponent prevents authorized users from accessing a system
+            this is an attack on the availability of the system
+
+An attack could be composed of more of these elements, e.g., masquerade, 
+replay, modification.
+
+--] 5 - Security Services
+
+A security service is a processing or communication service that is provided
+by a system to give a specific kind of protection to a system resource.
+Security services implement (are technical implementation of) security policies
+and are implemented by security mechanisms. (Stallings and RFC 2828)
+
+
+Security services in a company are used to prevent or counter security
+attacks.
+
+With security services we generally try to replicate functions
+normally associated with physical documents, e.g., applying dates
+and signatures, protection from disclosure or destruction; be notarized
+or witnessed; be recorded or licensed.
+
+The main security services described also by X.800 by ITU are:
+- Authentication
+    assurance that communicating entity is the one
+    claimed. We can distinguish two types of authentication:
+        - peer-entity authentication
+            (users can authenticate each other)
+        - data origin authentication
+            (one user can look at data and understand from who it comes from)
+- Access Control
+    prevention of the unauthorized use of a resource,
+    which comprehends:
+        - identification
+        - authentication
+        - authorization
+- Data Confidentiality
+    protection of data from unauthorized disclosure
+- Data Integrity
+    assurance that data received is as sent by an authorized entity
+- Non-Repudiation
+    protection against denial by one of the parties in a
+    communication. So basically Alice and Bob can't say
+    "I didn't do that", so identification, authentication
+    and confidentiality are involved
+- Availability
+    resource is accessible and usable
+
+
+--] 6 - Security Mechanisms
+
+Stallings says that security mechanisms are a combination of
+hardware, software and processes that implement a specific security
+policy.
+
+For example: protocol suppression, usage of an ID and authentication,
+and so on.
+
+Mechanisms use security services to enforce security policies.
+
+A security mechanism (or security enforcement point) is a
+technical implementation of a security policy.
+While a security policy is derived from a business policy.
+
+A business policy describes what we are going to do.
+A security policy describes how we are going to do it.
+A security mechanism (or security enforcement point) are the 
+technical implementation of that security policy.
+
+An example would be, we can say that everything starts
+from business policy e.g., no large-data movements on a server without
+especially without encryption.
+The security policy associated would be "disable FTP", which describes
+how we are going to do it. And the security mechanism is represented
+by a configuration disabling FTP. So the security mechanism in this
+case is using as security service the Access Control.
+
+So again remember from a higher to a lower point of view we have:
+
+Business policy --> Security Policy --> Security Mechanism
+
+Major specific security mechanisms include:
+- Cryptography
+- Digital Signatures
+- Access Controls
+- Data integrity techniques
+- Authentication exchange
+- Traffic padding
+- Routing control
+- Notarization
+- ...
+
+Pervarsive security mechanisms instead include:
+- trusted functionality
+- security labels
+- event detection
+- security audit trails
+- security recovery
+
+
+
+--] 7 - Network Security Models
+
+
+A model for network security
+involves two parties trying to communicate with
+confidentiality, integrity and accessability.
+
+
+Message -> Transformation -> Source Message ---+
+   |            |                              |
+   v            v                              |
+Sender    Secret Info                          v
+                                           +-------+
+                                           |   C   |
+                                           |   h   |
+                                           |   a   |
+                      Opponent -------->   |   n   | 
+                                           |   n   |
+                                           |   e   |
+                                           |   l   |
+Recipient    Secret Info                   +---+---+
+   |             |                             |    
+   v             v                             |    
+Message <- Transformation <- Source Message ---+
+
+        Fig. 1 Network Security Model
+
+
+Where both sender and recipient must have a trusted third party,
+such as an arbiter, a distributor of secret information.
+
+Using this model requires us to:
+1. Design a suitable algorithm for the security transformation
+2. Generate the secret information (keys) used by the algorithm
+3. Develop methods to distribute and share the secret information
+4. Specify a protocol enabling the principals to use the transformation
+   and secret information for a security service
+
+By X.800 context section A.2.1 we have the definition
+of security. 
+
+In terms of security architecture, by security we mean
+"minimizing the vulnerabilities of assets annd resources.
+
+An asset is anything of value.
+A vulnerability is any weakness that could be exploited to violate
+a system or the information it contains.
+
+A threat is a potential violation of security.
+
+ITU also states that we may need to protect:
+- data and information;
+- communication and data processing services;
+- equipment and facilities;
+
+
+--] 8 - Threats
+
+- Malwares
+- APTs
+- Botnets
+
+--] 8.1 - Threats: Malwares
+
+Malware stands for "Malicious software", the term was coined
+by Yisrael Radai in 1990.
+
+The main types of malware are:
+- Virus
+    a piece of malicious code that spreads from one computer to another
+    by attaching itself to other files using self replication,
+    requires human intervention to self replicate.
+    They use hiding techniques and are quite hard to remove since
+    they duplicate on a system. It may use polymorphic code
+    to bypass AVs.
+  
+- Worms
+    Worms are self-replicating malwares that do not require human
+    interactions, the goal is to just spread and cripple resources
+    or turn computers into zombies.
+
+- Trojan Horses
+    These are hidden malwares that cause damage to a system or gives
+    an attack access to the host. They are generally shipped
+    asa vending package, a game, a wallpaper or any kind of download.
+
+- Spyware
+    These are malwares with the main goal of tracking and reporting
+    the usage of the host or to collect data that the attacker desires
+    to obtain, usch as browsing history, marketing information or any
+    kind of files the attacker wants to chase.
+    
+- Adware
+    Adware, is code that automatically displays or downloads unsolicited
+    advertisements, usually seen on a browser pop-up.
+
+- RATs (Remote Access Tool)s
+   Remote Access Tools (or Remote Access Trojans) allow attackers to
+   gain unauthorized access and control the victim computer
+
+- Rootkit
+    A piece of software intended to take full or partial control of
+    a system at the lowest level.
+
+- Ransomware
+    These are malwares that restrict the access of to a computer or to
+    the data in it. The attacker demands a ransom to be paid to get
+    the data back. Generally if it is not paid within a certain amount
+    of time, the data will be destroyed.
+    A famous ransomware was the WannaCry.
+
+- Keyloggers
+    Software that records every keystroke made by a user.
+
+- Logic Bombs
+    Code that it's dormant and gets triggered by specific event,
+    and once triggered it performs what it was programmed to do.
+    Usually they erase or corrupt computer data.
+
+NOTE: An application that runs on your computer without your authorization
+but does no damage to the system is not considered malware.
+
+--] 8.2 Threats: APTs
+
+- APTs (Advanced Persistent Threat)s
+    It's a kind of software used to monitor and log data for a long
+    period of time designed specifically to stay undetected.
+    It generally targets governments, financial corps, or 
+    companies that have high value information.
+    APTs are developed particularly for a specific customer and occur
+    over a long period of time.
+
+--] 8.3 - Threats: Botnets
+
+A botnet is a set of compromised hosts that enables attackers
+to exploit those computer resources to mount attacks.
+These are used by black-hat hackers in operations such as
+spam, DoS, phishing and spyware, mining personal information or
+crypto-currency.
+
+The computers taking part to a botnets are also called "zombies",
+that are controlled from a "bot master" or a "bot herder".
+
+
+--] 8.4 Threats: How to protect
+
+We can protect ourselves against cyber-threats by implementing,
+- Technical Controls:
+    - AV
+    - IDS / IPS / UTM
+    - Updates
+- Administrative Controls:
+    - Policies
+    - Training
+    - Revisions and Tracking
+
+--] 9 - Internet Security Threats
+
+- Mapping and Scanning 
+    Contermeasures:
+        - Record traffic entering the network
+        - Look for suspicious activity
+        - Use a host scanner and keep a good
+          inventory of hosts on the network
+          creating a whitelist for "ok" environment
+
+- Packet Sniffing
+    Countermeasures:
+        - check periodically if NICs are set into promiscuous mode
+          if this is true, it means that the machine may be used
+          to sniff traffic for other machines
+
+- IP Spoofing
+    Countermeasures:
+        - (Partial Solution, only applicable in certain cases)
+          Ingress filtering, so that routers do not forward outgoing
+          packets with invalid source addresses
+
+- DoS Attacks
+    Countermeasures:
+        - Filter out flooded packets (e.g., SYN)
+          before reaching the host, throw out good with bad
+        - Traceback to source of floods (most likely an
+          innocent, compromised machine)
+
+- Host Insertions, ability to place an insider computer with malicious intent
+    Countermeasures:
+        - Maintain an accurate inventory of computer hosts by MAC address
+        - Use a host scanning capability to match discoverable hosts
+          against known inventory
+        - Missing hosts are ok
+        - New hosts are not ok (red lights and siren :) )
+
+- Rogue Software Process
+    These are used to monitor network traffic or exfiltrate sensitive data
+    They can be either put intentionally or being authorized programs that
+    have been modified
+    Countermeasures:
+        - Maintain a whitelist of legitimate applications
+
+
+--] 10 - Attacks and Cyber Crime Resources
+
+
+--] 10.1 - Cyber Kill Chain
+
+A kill chain is a set of activities that needs to be done to compromise
+a victim.
+
+The phases of the Intrusion Kill Chain are:
+
+- Reconnaissance
+    Research, identification and selection of targets
+- Weaponization
+    Pairing remote access malware with exploit into
+    a deliverable payload (e.g., Adobe PDF or Microsoft Office File)
+- Delivery
+    Transmission of weapon to target (e.g., via email attachments, websites,
+    USB devices)
+- Exploitation
+    Once delivered, the weapon's code is triggered, exploiting vulnerable
+    applications or systems
+- Installation
+    The weapon installs a backdoor on a target's system allowing persistent
+    access
+- Command & Control
+    Outside server communicates with the weapons providing "hands on keyboard"
+    access inside the target's network
+- Actions on Objective
+    The attacker works to achieve the objective of the intrusion, which can
+    include exfiltration or destruction of data, or intrusion inside another
+    target
+
+
+Note that often "Social Engineering" is a key part inside a Cyber Kill Chain.
+This is about tricking people to do things that they would not normally do.
+
+Phishing campaigns are also very common and are nowadays created by using
+gophish.
+Also Vishing is another technique used nowadays, where we still use
+social engineering, but instead of e-mails we use our own voice;
+Indeed, phones are a typical tool for vishing.
+
+
+--] 12 - Cyberwar
+
+We can analyze the cyberwar situation from the CSIS (Center for strategic
+and international studies) website under "Significant Cyber Incidents".
+
+Notice that in cyberwarfare whenever there is an operation or an attack
+we rarely can know if these are performed by groups of hackers
+which are state-sponsored or not.
+
+One book richly describing cyberwarfare is "Countdown To Zero Day",
+which tells the story of STUXNET.
+written by one of the top cybersecurity journalist "Kim Zetter".
+
+
+--] 12 - Cybercrime
+
+We have different resources online to use for CyberCrime,
+
+- CyberCrime Reports (X-Force)
+    - https://www.ibm.com/security/xforce
+    - https://www.ibm.com/security/data-breach 
+      (can estimate approximately how much a data breach would cost to us)
+
+
+--] 13 - Other
+
+To quiz one, vulnerability is identified by potential impact
+and adaptive capacity.
+
+NOTE: X-Force reports are created by the IBM research center.
+
+
+Which of three (3) these approaches could be used by hackers as part of a Business Email Compromise attack?
+
+
+True or False: An individual hacks into a military computer and uses it to launch an attack on a target he personally dislikes. This is considered an act of cyberwarfare.a False
+
+Which of three (3) these approaches could be used by hackers as part of a Business Email Compromise attack?
+Which type of actor hacked the 2016 US Presidential Elections? No hackers and not hacktivits
+

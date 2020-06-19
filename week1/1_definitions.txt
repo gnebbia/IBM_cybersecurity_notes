@@ -1,38 +1,50 @@
 ---] 1 - Cybersecurity Definitions
 
 NIST defines cybersecurity or information security as:
-> The protection of information systems from unauthorized:
-> - access,
-> - use,
-> - disclosure,
-> - disruption,
-> - modification, or
-> - destruction
->  in order to provide confidentiality, integrity and availability.
+ "The protection of information systems from unauthorized:
+  access, use, disclosure, disruption, modification, or destruction
+  in order to provide confidentiality, integrity and availability."
 
 These three principles of Confidentiality, Integrity and Availability
 are known as the **CIA Triad**.
 
-- Confidentiality: is synonymous with privacy. Confidentiality measures
-  prevent data from falling into the hands of people who do not have
-  authorization to access said information;
-- Integrity: is about making sure information is accurate and
-  always remains the same;
-- Availability: is about keeping system working and requires routine
-  maintenance and upgrading of hardware, software and operating system
-  environments;
+- Confidentiality
+    is synonymous with privacy. Confidentiality measures
+    prevent data from falling into the hands of people who do not have
+    authorization to access said information;
+- Integrity
+    is about making sure information is accurate and
+    always remains the same;
+- Availability
+    is about keeping system working and requires routine
+    maintenance and upgrading of hardware, software and operating system
+    environments;
 
 ---] 1.1 - Main Terms
 
 Four key terms are:
-- Vulnerability, a flaw, loophole, oversight, or error that can be exploited
-  to violate a system security policy;
-- Threat, is an event, natural or man-made, able to cause negative impact
-  to an organization, like a hurricane, a fire or an hacker;
-- Expoit, is a defined way to breach the security of an IT system through
-  a vulnerability;
-- Risk, it is a situation involving exposure to danger, or the likelihood
-  of a vulnerability to be exploited;
+- Asset
+    An asset is anything of value, e.g., people, property, information.
+    Property assets consist of both tangible and intangible items that
+    can be assigned a value.  Information may include databases, software
+    code, critical company records, and many other intangible items.
+    An asset is what we are trying to protect.
+- Vulnerability
+    a flaw, loophole, oversight, or error that can be exploited
+    to violate a system security policy;
+    A vulnerability is a weakness or gap in our protection efforts.
+- Threat
+    is an event, natural or man-made, able to cause negative impact
+    to an organization, like a hurricane, a fire or an hacker;
+    A threat is what we’re trying to protect against.
+- Expoit
+    is a defined way to breach the security of an IT system through
+    a vulnerability;
+- Risk
+    it is a situation involving exposure to danger, or the likelihood
+    of a vulnerability to be exploited;
+    Risk can be thought of as the intersection of assets, threats, and vulnerabilities
+    Indeed it is, Asset + Threat + Vulnerability = Risk.
 
 ---] 1.2 Security Threats
 
@@ -77,41 +89,42 @@ Here we report a common list of roles used by companies involved with
 cybersecurity. Note that although the list tries to be as general as
 possible, many companies adopt custom role names.
 
-- CISO (Chief Information Security Officer),
-  this is a fairly new role and was created to make sure
-  there is a head and someone in charge of the information
-  security division to supervise and be the leader of the
-  infosec tower;
+- CISO (Chief Information Security Officer)
+    this is a fairly new role and was created to make sure
+    there is a head and someone in charge of the information
+    security division to supervise and be the leader of the
+    infosec tower;
 
 - Information Security Architect;
 
-- Information Security Consultant/Specialist;
+- Information Security Consultant/Specialist
 
-- Information Security Analyst,
-  this is the day-to-day person in charge of conducting basic
-  information security assessments and more specifically analyzing
-  the events, alerts, alarms and any information that could be
-  useful to identify any threats that could compromise the
-  organization. So basically it gets events from a SIEM
-  and conducts an investigation to understand what it is
-  about and how to prevent the alert from popping up, e.g.,
-  modifying IPS/IDS configuration;
+- Information Security Analyst
+    this is the day-to-day person in charge of conducting basic
+    information security assessments and more specifically analyzing
+    the events, alerts, alarms and any information that could be
+    useful to identify any threats that could compromise the
+    organization. So basically it gets events from a SIEM
+    and conducts an investigation to understand what it is
+    about and how to prevent the alert from popping up, e.g.,
+    modifying IPS/IDS configuration;
 
-- Information Security Auditor,
-  this person checks if a computer systems is following the best
-  practices outlined by standards, such as ISO-27001 or ISO27002;
+- Information Security Auditor
+    this person checks if a computer systems is following the best
+    practices outlined by standards, such as ISO-27001 or ISO27002;
 
-- Security Software Developer;
+- Security Software Developer
 
 - Penetration Tester / Ethical Hacker (part of the red team);
 
-- Vulnerability Assessor;
+- Vulnerability Assessor
 
-- Digital Forensic Analyst (part of the blue team);
+- Digital Forensic Analyst (part of the blue team)
 
-- SIEM Engineer (part of the blue team),
-  the person responsible for the tuning and configuration
-  of a SIEM platform;
+- SIEM Engineer
+    (part of the blue team),
+    the person responsible for the tuning and configuration
+    of a SIEM platform;
 
 
 ---] 1.4 - History of Cybersecurity
@@ -145,27 +158,33 @@ start an attack.
 
 ---] 1.5 - Early Operation Attempts and Some Victories
 
-- Clipper Chip, chip developed by NSA that should have been used by
-  phone companies to encrypt communications,
-  but never really used and cancelled in 1996. The main cause was that
-  it was proprietary and most likely vulnerable.
-- Moonlight Maze, was a 1999 US government investigation into a massive
-  data breach of classified information coming from a MainFrame in
-  Moscow. Moonlight Maze represents one of the first widely known
-  cyber-espionage campaigns in world history. I
-- Solar Sunrise, another investigative operation by US after an advanced
-  attack to important US departments, the attackers were two teens from
-  California and an israeli hacker (known as "the analyzer" or "pink pony"),
-  around 2000.
-- Buckshoot Yankee, this is the most significant breach by US military
-  systems, which was deployed as a series of compromises in 2008.
-  The attackers used a trojan known as "Agent.BTZ" which stayed on the systems
-  for 14 months. Nobody understood where the attack came from, but an hypothesis
-  says from China.
-- Desert Storm, this was a real military operation but comprehending a cyber
-  component, early '90s.
-- Bosnia, this was a real military operation but comprehending a cyber
-  component, early '90s.
+- Clipper Chip
+    Chip developed by NSA that should have been used by
+    phone companies to encrypt communications,
+    but never really used and cancelled in 1996. The main cause was that
+    it was proprietary and most likely vulnerable.
+- Moonlight Maze
+    was a 1999 US government investigation into a massive
+    data breach of classified information coming from a MainFrame in
+    Moscow. Moonlight Maze represents one of the first widely known
+    cyber-espionage campaigns in world history. I
+- Solar Sunrise
+    another investigative operation by US after an advanced
+    attack to important US departments, the attackers were two teens from
+    California and an israeli hacker (known as "the analyzer" or "pink pony"),
+    around 2000.
+- Buckshoot Yankee
+    this is the most significant breach by US military
+    systems, which was deployed as a series of compromises in 2008.
+    The attackers used a trojan known as "Agent.BTZ" which stayed on the systems
+    for 14 months. Nobody understood where the attack came from, but an hypothesis
+    says from China.
+- Desert Storm
+    this was a real military operation but comprehending a cyber
+    component, early '90s.
+- Bosnia
+    this was a real military operation but comprehending a cyber
+    component, early '90s.
 
 
 ---] 1.6 - Cybersecurity Today in Numbers
@@ -178,4 +197,127 @@ start an attack.
 To have some yearly numbers about cybersecurity we can use the:
 "X-Force Threat Intelligence Index", which is a yearly report.
 
+
+---] 1.7 - Cybersecurity Difficulties
+
+Performing effective cybersecurity is difficult because nowadays
+we have to deal with very diverse aspects and the amount of
+data into play is huge.
+The aspects to keep into account are:
+
+- Data and its Protection
+    There are multiple ways to protect data and multiple types
+    of data, consider also non-electronic data
+- Diverse Technology
+    Data is no longer only in notebooks, workstations or mainframes,
+    but mobile devices such tablets, smartphones and other appliances
+    have confidential data to monitor and protect
+- Global Business
+    We generally need to protect more than one office in different
+    countries
+- Multiple Vendors/Technologies
+    We make use of different technologies and multiple vendors
+    while eeverything must be able to communicate
+
+---] 1.8 - Cybersecurity Program: Considerations
+
+Here we describe what are the considerations that must be taken into
+account to start a cybersecurity program.
+
+- Define a "Security Program"
+- Manage the Asset
+- Technical Controls
+- Administrative Controls
+
+
+---] 1.8.1 - Define a Security Program
+
+In order to start in the cyber security arena, we must have what is called
+a "cybersecurity program", where specialists evaluate, create teams,
+establish baselines, identify and model the threats, use cases, risks
+and define a monitoring an control strategy for the risks and threats
+identified.
+
+---] 1.8.2 - Manage the Asset
+
+We have to identify all the assets which does not refer to the
+computers we have in front of us, but it is about documents, 
+systems and resources.
+
+So basically we have to:
+- identify the assets;
+- classify the assets;
+- control its CIA;
+- implement proper access control for each asset;
+
+---] 1.8.3 - Technical Controls
+
+We have to define:
+- network infrastructure;
+- protection endpoints;
+- UTMs (Unified Threat Management Systems);
+- identity management;
+- vulnerability management;
+- monitoring and logging;
+
+
+---] 1.8.4 - Administrative Controls
+
+We also have to define what are called "Administrative Controls":
+- policies;
+- procedures;
+- standards;
+- user education procedures;
+- incident response plans;
+- disaster recovery procedures;
+- compliance and physical security;
+
+---] 1.9 What is security ?
+
+NIST defines Computer Security as:
+"The protection afforded to an automated information system
+in order to attain the applicable objectives of preserving the integrity,
+availability and confidentiality of information system resources includes
+hardware, software, firmware, information/data, and telecommunications."
+
+Cybersecurity is used interchangeably with "Computer Systems Security".
+
+The difference between information security and cybersecurity, is
+related to the scope. Indeed cybersecurity is more involved with the
+information processed by electronic systems, which nowadays is the most
+common solution.  While in the past also physical documents security was
+of paramount importance hence the information security field has a more
+wide scope.
+
+
+---] 1.10 Additional Security Challenges
+
+- Security is not as simple as it seems: easy requirements tough solutions
+- Solutions can be attacked themselves
+- Protection of enforcement structure can complicate solutions
+- Security architectural decisions: know what to do, and where
+- Key management is really hard, generation, distribution, memorization of keys
+- Protectors have to be "right" all the time, attackers just once
+- No one likes security until it's needed, seat-belt philosophy,
+  remember that a seat-belt costs around 200 USD, but its value
+  is about milions of USD when it is saving your life
+- Security architectures require constant effort
+- Security is often a decision after thought
+- Security is viewed as "in the way", hence not something good
+  for some companies
+
+
+---] 1.11 Resources for penetration testers
+
+Resources available to help guide penetration testing efforts by cybersecurity
+specialists are:
+- OSSTMM (Open Source Security Testing Methodology Manual)
+- EFIEC Federal Financial Institutions Examination Council Information Technology Examination
+- NIST SP 800-42 Guidelines on Network Security Testing
+
+According to the Vulnerability Assessment Methodology, Vulnerabilities are determined
+by two factors:
+- exposure and sensitivity YES ??
+- identify indicatorrs and exposure ?
+- sensitivity and adaptive capacity (NO)
 

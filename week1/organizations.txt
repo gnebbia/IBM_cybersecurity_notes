@@ -1,0 +1,59 @@
+Cybersecurity Associations
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+A list of the most important cybersecurity industry associations
+can be found here:
+https://cybersecurityventures.com/cybersecurity-associations/#home/?view_1_page=1
+
+Some noteworthy associations are:
+
+- WiCys
+    Women in Cybersecurity
+    https://www.wicys.org/resources/menu
+
+- SANS
+    https://www.sans.org/critical-security-controls/
+
+- OWASP
+    OWASP https://www.owasp.org/index.php/Category:OWASP_Project#tab=Project_Inventory
+
+- ISSA
+    Information Systems Security Association (ISSA) https://www.issa.org/
+
+- FIRST 
+    Forum of Incident Response and Security Teams (FIRST) You will also
+    want to review the frameworks available from FIRST. The Frameworks
+    are to assist organizations in building, maintaining, and growing
+    capabilities of their CSIRT (computer security incident response team
+    or PSIRTs (Product Security Incident Response Team)
+
+    These frameworks will be explored further.
+    https://www.first.org/education/service-framework
+
+
+- Additional Cybersecurity Industry Associations
+    Examine the list of additional Cybersecurity Industry Associations
+    provided by Cybersecurity Ventures.
+
+    https://cybersecurityventures.com/cybersecurity-associations/#home/?view_1_page=1
+
+    Cybersecurity Ventures is the home for the Cybercrime Magazine which
+    will give you some of the latest information about what is happening
+    in cybersecurity today. Check out the latest issue and explore some of
+    the articles and information to get you ready for knowing the latest and
+    greatest information around cybersecurity. You will want to take a look
+    now and then again at the end of this course to understand important
+    topics reviewed during this introductory course in cybersecurity.
+
+    Read this interesting articles on cybersecurity predictions: "Top 5
+    Cybersecurity Facts, Figures, Predictions, And Statistics For 2019
+    To 2021"
+
+    https://cybersecurityventures.com/top-5-cybersecurity-facts-figures-predictions-and-statistics-for-2019-to-2021/
+
+    As your skills grow in cybersecurity, you will want to bookmark all of
+    these resources to keep your skills up to date in this every changing
+    world of cybersecurity. You will learn something new everyday!
+
+

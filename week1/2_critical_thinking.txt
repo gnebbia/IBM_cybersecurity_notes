@@ -1,0 +1,183 @@
+---] 1.11 Critical Thinking
+
+Critical thinking is an essential skill in many cybersecurity
+career paths.
+The definition may vary depending on the source, but esentially
+critical thinking is controlled, purposeful thinking directed
+toward a goal.
+
+Critical thinking forces us to think and act in situations where there are no
+clear answers nor specific procedures.
+It is partly art and partly science.
+
+Critical thinking is more important than ever in a world
+where we have an overwhelming amount of information.
+
+Note that Technical skills in cybersecurity for most big companies
+are related to:
+- Intrusion Detection
+- Reverse Engineering
+- Programming
+- Virtualization
+- Cryptography
+- Networking
+- Operating Systems
+- Database Modeling
+
+These are fundamental skills, of course tools and frameworks will change
+often, but the reality is that security fundamentals change slowly.
+The point is that critical thinking skills coupled with an understanding
+of security fundamentals will allow us to identify solutions to unknown,
+undefined and complex situations (regardless of technology).
+
+Critical thinking is at the intersection between:
+- Attitutes/Behaviours based on personal experience
+- Technical Skills /Competencies (the ones listed above)
+- Interpersonal Skills
+- Theoritical and Experimental knowledge
+
+The 5 key skills of critical thinking are:
+
+1. Challenge assumptions
+    - Systematically list and challenge
+    - Refine as we learn more
+
+2. Consider alternatives
+    - Brainstorm full range of possibilities
+    - Break into components, who/what/when/where/why/how?
+
+3. Evaluate data
+    - Crux of the scientific method
+    - Does the data fit our hypothesis?
+
+4. Identify key drivers
+    - What are the driving forces at play?
+    - This can help us identify the future
+
+5. Understand context
+    - MOST IMPORTANT!
+    - Put ourselves in others' shoes - reframe the problem
+
+
+
+---] 1.11.1 Critical Thinking: Challenge Assumptions
+
+An asssumption is a thought that causes us to predict an outcomt,
+usually it is based on a past experience or old thoughts and evidence.
+
+We have to challenge our assumptions! This means that we
+have to systematically list our assumptions and then assess whether
+they are solid, they have caveats or are unsupported.
+
+We also have to refine our assumptions as we learn more and
+circumstances change.
+
+Questions are converted into "collection requirements" (needing more hard
+data) or "research topics" (needing more information).
+
+The Key assumptions check can be subdivided into 5 steps:
+1. Explicitly list all assumptions
+    - inviting all stakeholders
+    - brainstorming
+    - look for phrases like "will always, will never,
+      would have to be, based on, generally  the case..."
+2. Examine each with questions
+    - why do you think it is correct?
+    - when could this be untrue?
+    - how confident am I that this is valid?
+    - if it is invalid, what would be the impact be?
+3. Categorize based on evidence
+    - solid and well-supported
+    - correct (with caveats...)
+    - unsupported/questionable - uncertainties
+4. Refine and remove
+    - remove assumptions that don't hold up
+    - add new assumptions that emerge
+5. Identify additional data needs
+    - unsupported doesn't mean invalid
+    - considera turning them into research topics
+    - consider whether additional data should be collected
+
+
+---] 1.11.2 Critical Thinking: Consider Alternative Explanations
+
+Our brains can piece together a situation with just a few bits of data.
+Failure to consider missing data or alternatives can lead us down
+the wrong path.
+
+How do we consider alternatives?
+- Brainstorm
+    - Get crazy
+    - List all possibilities
+    - Go from negative to positive
+- The 6 W's
+    - Provide framework
+    - Who/what/when/where/why/how
+    - Evaluate all dimensions
+- Null Hypothesis
+    - Establish the opposite of our main hypothesis
+    - Useful for anomalous data
+
+Adoid letting ourselves become entrenched in one explanation.
+
+---] 1.11.3 Critical Thinking: Evaluate Data
+
+We have to know our data, and know what does normal look like
+in our scenario.
+This is the key to anomaly detection.
+
+We must establish a baseline for what's normal:
+- web traffic
+- network sensors
+- endpoint activity
+- sources/destinations
+- volume/velocity
+- ...
+
+And we have to be on the lookout for inconsistent data.
+
+NOTE: "cyber" data is notoriously hard to get because of
+policy/privacy/collection e.g., GDPR, HIPAA issues.
+So we must be proactive and understand what we will
+need to troubleshoot problems and how to establish
+what is normal.
+
+---] 1.11.4 Critical Thinking: Identify Key Drivers
+
+Key drivers significantly impact a situation.
+These are the main key drivers of the cybersecurity,
+so factors that have an impact on a situation and they are
+not always technical.
+
+- Technology: encrytpion, authentication, tools, frameworks, infrastructure availability
+- Regulatory: privacy, intellectual property, safety regulations, GDPR/HIPAA/etc...
+- Society: politics, public perception, expectation to keep data secure
+- Supply Chain: customer requirements, logistics, cost, scheduling
+- Employees, employee perspective, skills, training needs
+- Threat Actors, technical capability, motives, opportunity
+
+---] 1.11.5 Critical Thinking: Understand Context
+
+Context is the operational environment in which we are working.
+We have to cnsider the perspective of our managers, colleagues and clients.
+
+What do they need from me? How can I frame this issue? Do I need to place
+their questions in a broader context?
+
+Framing techniques help keep everyone on the same page and use the same
+vocabulary.
+
+In order to "frame the issue", we shoud:
+- identify the key components
+- identify factors at play
+- identify relationships
+- ientify similarities/differences
+- redefine
+
+Think about the slow elevator problem, the solution may not be calling
+the technician, but distract people with mirrors,
+music or art displays to shorten the perceived wait time.
+
+So if a problem can't be solved within the frame it was conceived, the solution
+lies in reframing the problem.
+
