@@ -57,3 +57,12 @@ Some noteworthy associations are:
     world of cybersecurity. You will learn something new everyday!
 
 
+- Found by ME
+
+- CREST
+    Contains very good resources and notes about pentesting/monitoring/logging
+    https://www.crest-approved.org/wp-content/uploads/Cyber-Security-Monitoring-Guide.pdf
+    https://www.crest-approved.org/knowledge-sharing/implementation-procurement-guides/index.html
+    https://www.crest-approved.org/wp-content/uploads/PenTest-Procurement-Guide.pdf
+    https://www.crest-approved.org/wp-content/uploads/PenTest-Buyers-Guide.pdf
+    https://www.crest-approved.org/wp-content/uploads/CREST-Penetration-Testing-Guide-1.pdf
