@@ -1,0 +1,124 @@
+Incident Management and Response
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Computer security Incident management involves the monitoring
+and detection of security events on a computer or a computer
+network and the execution of proper resources to those events.
+This means that an incident management team will regularly
+check and monitor the security events occurring on a computer
+and on the network.
+
+Incident Response is a part within the more general incident
+management activity.
+
+
+--] 1 - Key Components of Incident Management
+
+The four key components of incident management are:
+- Events
+    An observed change to the normal behavior of a system,
+    environment, process, workflow or person. Examples:
+    router ACLs were updates, firewall policy was pushed.
+- Incident
+    It is an event that negatively effects in some way
+    the CIA triad of an organization in a way that impacts
+    the business
+- Response Team
+    CSIRT (Computer Security Response Team) is a team that
+    receives reports of security breaches, conducts
+    analyses of the reports and responds to the senders.
+    A CSIRT may be an established group or an ad-hoc assembly
+- Investigation
+    One important part performed by the CSIRT is represented
+    by the investigation process, so that the incident
+    may be avoided the next time.
+    The investigation seeks to determine the circumstances
+    of the incident. Every incident will warrant or require
+    an investigation. Evidence is collected and the chain
+    of custody is kept into account
+
+--] 2 - Key Components of Incident Response
+
+Other concepts to understand in the context of incident response are:
+- E-Discovery
+    Data inventory, helps to understand the current tech status,
+    data classification, data management, we could use authorized
+    systems. Understand how we control data retention and backup
+    This is a baseline
+- Automated Systems
+    Usage of SIEM, SOAR (Security Orchestration Automation and
+    Response), UBA (User Behavior Analytics), big data analysis,
+    honeypots/honeytokens, AI or other technologies we could enhance the
+    mechanism to detect and control incidents that could compromise the
+    tech environments
+    NOTE: SOAR are like SIEM but comprehend more advanced functionalities
+- BCP (Business Continuity Plan) & Disaster Recovery
+    Understand the company in order to prepare the BCP. The BCP is a
+    procedure that is used to guide the CSIRT or in general the whole
+    organization as soon as something happens.  For example, how will our
+    organization deal with a service going down for the next three or
+    four hours? What will the IT be doing? How is the customer service
+    going to deal with all the calls received? BIA (Business impact
+    analysis) it's also good to have for a clear understanding of the
+    critical business areas. Also indicate if a security incident will
+    trigger the BCP or the disaster recovery Disaster Recovery is the
+    process that we follow to recover all the business areas after a
+    disaster occurs (which may be e.g., an hurricane or a cyber attack)
+- Post-Incident
+    Once we have recovered, we should understand what/who caused the
+    incident and how it happened and how can we avoid it the next time.
+    Here we apply Root-Cause analysis, hence we must understand the difference
+    between an error, a problem and an isolated incident.
+    Lessons learned (experience) and reports are key
+
+
+--] 3 - Incident Response Process
+
+Reference: CREST
+
+In order to manage an incident, we can split the operations into three
+phases:
+1. Prepare
+2. Respond
+3. Follow Up
+
+--] 3.1 - Incident Response Process: Phase I - Prepare
+
+1. Conduct a criticality assessment for your organization
+2. Carry out a cyber security threat analysis, supported by
+   realistic scenarios and rehearsals
+3. Consider the implications of people, process, technology
+   and information
+4. Create an appropriate control framework
+5. Review your state of readiness in cyber security incident
+   response
+
+
+--] 3.2 - Incident Response Process: Phase II - Respond
+
+1. Identify  cyber security incident
+2. Define objectives and investigate situation
+3. Take appropriate action (consider triggering the business
+   recovery or continuity plan)
+4. Recover systems, data and connectivity
+
+--] 3.3 - Incident Response Process: Phase II - Follow Up
+
+1. Investigate incident more thoroughly
+2. Report incident to relevant stakeholders
+3. Carry out a post-incident review
+4. Communicate and build on lessons learned
+5. Update key information, controls and processes
+6. Perform trend analysis
+    understand what are the wrong behavior and consider
+    to conduct a security awareness program to employees
+    if a certain incident happens frequenty (e.g., bad USB
+    dropped in the parking lot)
+
+
+Two mindmaps about incident response are:
+https://www.mindmeister.com/591683277/incident-response-and-handling-steps?fullscreen=1
+https://www.mindmeister.com/1238203018/computer-incidient-response-plan?fullscreen=1
+
+This is a lot of information, that we can view especially once we know
+more about incident response.

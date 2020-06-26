@@ -1,0 +1,105 @@
+Security Standards and compliance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--] 1.0 - Introduction
+
+Within Cybersecurity it is important to distinguish
+between:
+- Frameworks
+- Best Practices
+- Baselines
+and
+- Normative and compliance
+
+First, it is important to understand frameworks, best practices and
+baselines differ from normatives and compliance.
+
+Because the first group is used to improve the controls, methodoloies
+and governance for the IT departments or the global behavior of the
+organization. They seek to improve performance, controls and metrics
+and additionally help to translate the business needs into technical
+or operational needs.
+Basically best practices, baselines and frameworks are more suggestions
+and they may not be followed strictly or at all.
+
+Examples of best practices used by IT security companies:
+- COBIT
+- ITIL
+- ISOs (27000 series)
+- COSO
+- PMI (Project Management methodologies)
+- Industry Best Practices
+- Developer recommendations
+- others
+
+
+On the contrary, normatives and compliance are rules to follow for
+a specific industries. For example, HIPAA must be followed
+by any company in the health care in the US.
+Enforcement for the government, industry or clients is mandatory
+even if the company or the organization does not want to implement
+those controls, whenever there is a compliance need.
+
+
+
+
+--] 1.1 - IT Governance Process
+
+The IT governance process is part of an organization and comprehends:
+- Policies
+    Those plans (tactical and strategic) are enforced by policies
+- Strategic and Tactic Plans
+    Each organization must have a set of strategic plans based
+    on the goals and objectives. The tactic plans is basically
+    how we can implement a strategic plan.
+- Procedures
+    Each policy may have a procedure associated with details
+    regarding the operative process
+- Others
+    Could be other documents such as guidelines, baselines,
+    standards and technical procedures
+
+
+
+--] 1.2 - Cybersecurity Compliance and Audit Overview
+
+Examples of compliance that must be followed by companies
+are:
+
+- SOX       (financial systems compliance)
+- GLBA      (financial systems compliance)
+- HIPPA     (healthcare systems compliance)
+- PCI/DSS   (credit card payment systems compliance)
+
+For example online stores need to comply with PCI/DSS.
+Companies who comply with PCI/DSS must perform pentests
+on a regular basis.
+
+Companies that want to check a satisfaction with respect to a specific 
+compliance standard or framework must perform what is called an
+"audit".
+
+Audits can be internal or external. Internal audits are performed by
+internal audit department. External audits are audits performed
+by third-party companies.
+
+Audits can be performed by keeping into account the OCTAVE framework
+described here:
+http://www.cert.org/octave/
+
+
+
+--] 1.3 - Pentest - Ethical Hacking
+
+Pentest is a method of evaluating computer and network security by
+simulating an attack on a computer system or network from external and
+internal threats.
+
+A sample procedure for pentesting is the one shown by Mile 2 CPTE Training.
+
+Remember that an audit is not a pentest and a pentest is not necessarily
+part of an audit.
+
+
+For pentesting Web applications or mobile applications we can observe
+the OWASP framework.

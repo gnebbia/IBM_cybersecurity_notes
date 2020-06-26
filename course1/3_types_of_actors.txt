@@ -494,10 +494,11 @@ NOTE: X-Force reports are created by the IBM research center.
 
 
 Which of three (3) these approaches could be used by hackers as part of a Business Email Compromise attack?
+(all but request to make a payment)
+
 
 
 True or False: An individual hacks into a military computer and uses it to launch an attack on a target he personally dislikes. This is considered an act of cyberwarfare.a False
 
-Which of three (3) these approaches could be used by hackers as part of a Business Email Compromise attack?
-Which type of actor hacked the 2016 US Presidential Elections? No hackers and not hacktivits
+Which type of actor hacked the 2016 US Presidential Elections? No hackers and not hacktivits, but government
 

@@ -1,0 +1,34 @@
+Access Management
+~~~~~~~~~~~~~~~~~
+
+--] 1 - Authorization
+
+Authorization can be performed using different criteria:
+- groups
+- time frame and/or specific dates
+- physical location
+- transaction type
+
+We sometimees just need to access certain information
+for the role, this is called "need_to_know".
+
+Generally in the enterprise mechanisms such as SSO (Single Sign-On)
+are used.
+
+--] 2 - Authentication
+
+On most systems, identification is performed coupled
+with authentication.
+For the identification we generally have to provide
+an identity information, such as a username, this
+is called "identity proof".
+
+Two enterprise authentication techniques are:
+- Kerberos (SSO)
+- Mutual Authentication (e.g., MS-CHAPv2)
+
+In Active Directory (AD) we have SID as identity proof, used to identify
+users and more generallly objects in Active Directory environments.
+For the authorization part,  most OSes implement at least Discretionary
+Access Control Lists (DACL), which is used also in AD, and basically lets
+each user decide for its own files what to share with who.

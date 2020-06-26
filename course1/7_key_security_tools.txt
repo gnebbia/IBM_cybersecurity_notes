@@ -1,0 +1,293 @@
+Key Security Tools
+~~~~~~~~~~~~~~~~~~
+
+- Firewalls
+- AntiVirus Solutions (AV)
+- Cryptography
+- Pentesting
+- Forensics
+
+--] 1 - Firewalls
+
+Firewalls are protection mechanisms used to isolate
+a network segment from other network segments,
+allowing some packets to pass while blocking others.
+
+There are three main types of firewalls:
+- Packet-Filtering Firewalls
+    Blocking on a packet basis, frequently depending
+    on source/dest IP, TCP/UDP source/dest port,
+    ICMP message type or TCP SYN/ACK bits
+    An example would be blocking inbound TCP
+    segments with ACK=0 to prevent external
+    clients from making TCP connections with
+    internal clients, but allows internal clients
+    to connect to outside
+- Application-Level Firewalls (or application gateways)
+    These filter packets on application data as well
+    as on IP/TCP/UDP fields
+    Example: allow to select internal users to telnet
+    outside
+- XML Gateways: used to examine the payload of
+   an XML message, a format widely used in enterprise
+   applications. It generally checks if the message
+   is well-formed, if there is no executable code,
+   if the source and target IP addresses make sense
+
+
+Limitagions of firewalls are:
+- IP Spoofing, cannot be detected
+- if multiple applications need special configuration,
+  each of these must have its own gateway
+- client software must know how to contact gateway,
+  e.g., must set IP address of proxy in web browser
+- filters are generally all or nothing for UDP
+- there is a tradeoff between:
+    the level of communication with the outside world
+    and
+    the level of security
+
+
+Firewalls can be divided into many types but a common
+categorization is:
+- Stateful, can work on the "state" of a communication,
+  they are based on "state tables" that allow the firewall
+  to compare current packets with previous packets.
+  These firewalls are slower but more secure wrt stateless
+  firewalls. Sometimes they are also called "application firewalls"
+  because they are able to make decisions based on application 
+  data (L7)
+- Stateless, does not have the concept of state, it just
+  acts as "packet filter" and generally it is used to filter
+  packets on layer IP and layer TCP/UDP, the lack of
+  state makes it less flexible and secure wrt stateful firewalls
+
+
+Another common type of firewall is the "proxy firewall",
+which is used to act as an intermediary server.
+Proxies terminate connections anad initiate new ones, like
+in a MiTM.
+There are two 3-way handshakes between two devices communicating
+through a proxy firewall.
+
+
+
+--] 2 - Antivirus/Antimalware
+
+An AV/AM is a specialized software that can detect, prevent and even
+destroy a computer virus or malware.
+
+Generally they use malware definitions and scan the system searching
+for matches against the malware definitions.
+These definitions get constantly updated by vendors.
+Comparing hashes of files is how most detect malicious files on
+your system, so signatures are represented by these hashes.
+
+--] 3 - Cryptography
+
+Cryptography is the way for secret writing.
+Cryptography was used also in ancient times, e.g., the caesar cipher.
+
+In practice we need to secure both data at rest and data in motion.
+
+Cryptoanalysis is the science behind the understanding if a specific
+cipher/algorithm is effective/reobust or vulnerable.
+
+There are two main types of ciphers:
+- stream ciphers, which encrypt info bit by bit
+- block ciphers, which encrypt info by a specific amount of bits/bytes
+
+Three main cryptographic tools are:
+- Symmetric Cryptography
+    - the same key is used to encrypt/decrypt
+    - security depends on keeping the key secret at all times
+    - strengths include speed and cryptographic strength per bit of key
+    - the bigger the key the stronger the algorithm
+    - key needs to be shared using a secure, out-of-band channel
+    - DES, Tiple DES, AES are examples of symmetric encryption
+- Asymmetric Cryptography
+    - Whitfield Diffie and Martin Hellman, created the Diffie-Hellman method
+      which represents the fundamentals of asymmetric cryptography; they are
+      indeed the pioneers of asymmetric crypto
+    - uses two keys
+    - one key can be made public, while the other must be kept secret
+    - one for encryption and the other for decryption, whatever
+      is encrypted with one key can only be decrypted with the other key
+      and viceversa
+    - used in digital certificates
+    - used in PKI (Public Key Infrastructure)
+    - it uses "one-way" techniques  to generate the two keys. Like
+      factoring prime numbers and discrete logarithm
+    - it is generally slower than symmetric crypto, that's why most of
+      the times, they are used together, e.g., https
+- Hash functions
+    - provides encryption using an algorithm and no key
+    - a variable-lenght plaintext is "hashed" into a fixed-length hash value
+      often valled "message digest" or simply a "hash"
+    - if the hash of a plaintext changes, the plaintext itself has changed
+    - SHA-1, MD5, are older algorithms prone to collisions
+    - SHA-2, SHA-3 are newer algorithms
+
+
+NOTE: One of the first commercially available encryption techniques
+was DES, that was vulnerable to brute force attacks, then AES
+came to replace it, which was more resilient wrt brute-force.
+
+--] 3.1 Cryptography Attacks
+
+The 5 most common forms of cryptographic attacks are:
+- Brute Force, 
+- Rainbow tables, compare huge list of hashes with a hash
+- Social engineering, ask the password
+- Known plaintext, we know the plaintext which generated a certain plaintext
+                   and try to guess the key used to encrypt data
+- Known ciphertext, we know the ciphertext which generated a certain plaintext,
+                   and try to guess the key used to encrypt data
+
+--] 4 Penetration Testing
+
+Pentest, pen testing or ethical hacking, it is the practice
+of testing a computer system, network or application
+to find security vulnerabilities that an attacker could exploit.
+
+During pentest is good to distinguish between the:
+- pentester/ethical hacker
+- threat actors
+    an entity that is partially or wholly responsible for an incident
+    or attack that affects or potentially affects an organization's
+    security. Also referred to as malicious actor.
+    There are different types of threat actors:
+    - script kiddies
+    - hacktivists
+    - organized crime
+    - insiders
+    - competitors
+    - nation states
+        - Fancy Bears (APT28)
+        - Lazarus Group
+        - Starcruft (Group 123)
+        - APT29
+
+Common Pentest methodologies are:
+- OSSTMM: Open Source Security Testing Methodology
+- NIST SP 800-42
+- FFIEC
+- ISSAF
+- PTES
+
+During pentest we must understand how to test for vulnerabilities,
+in this context we can use the Vulnerability Assessment Methodology.
+In vulnerability assessment a pentester limits himself to just
+run software as Nessus or OpenVAS to identify possible
+vulnerabilities without explicitly exploiting them.
+
+At http://www.letsrespondtoolkit.org/vulnerability-assessment
+we can check a general methodology to perform vulnerability assessment.
+
+There are four steps to conducting a vulnerability assessment, there are:
+Step 1: Identify potential impacts of indicators
+Step 2: Assess whether the impact will take place (exposure)
+Step 3: Assess how important the risk is (sensitivity)
+Step 4: Assess if you can respond to the risk (adaptive capacity)
+
+
+Which states that:
+Identify Indicators:
+    - Exposure
+    - Sensitivity
+
+Exposure and Sensitivity represent the potential impacts, which,
+coupled with "Adaptive Capacity" compose a "vulnerability".
+
+
+              +-----------+--------------+
+              |   Identify Indicators    |
+              +-----------|--------------+
+                          |
+                 +--------+----------------+
+                 |                         |
+       +---------v---------+     +---------v--------+ 
+       |     Exposure      |     |    Sensitivity   | 
+       +---------+---------+     +---------+--------+ 
+           +-----+-------------------------+
+           |
++----------v----------+     +----------+----------+ 
+|  Potential Impacts  |     |  Adaptive Capacity  | 
++----------+----------+     +----------+----------+ 
+           +-----+---------------------+
+                 |
+        +--------v----------+
+        |   Vulnerability   |
+        +--------+----------+
+
+    Fig. 1 - Characterization of a Vulnerability
+
+     
+
+Companies generally suggest to perform:
+- Vulnerability Scanning
+    FREQUENCY: Quarterly or bimonthly (more often for high risk systems),
+               or whenever the vulnerability database is updated
+    METHOD:
+        - enumerate the network structure and determine the set of active
+          hosts and associated software
+        - ientifies a target set of computers to focus vulnerability
+          analysis
+        - identifies potential vulnerabilities on the target set
+        - validates operating systems and major applications are
+          up-to-date with security patches and software versions
+- Penetration Testing
+    FREQUENCY: Annually
+    METHOD:
+        - determine how vulnerable an organization's network is to penetration
+          and the level of damage that can be incurred
+        - tests the IT staff's response to perceived security incidents and
+          their knowledge and implementation of the organization's security
+          policy and system's security requirements
+- Integrity Checkers
+    FREQUENCY: Monthly and in case of a suspicious event
+    METHOD:
+        - detects unauthorized filee modifications
+
+
+--] 5 - Digital Forensics    
+
+Digital Forensics is a branch of forensic science and includes the
+identification, recovery, investigation, validation and presentation
+of facts regarding digital evidence found on computers or similar
+digital storage media devices.
+
+Dr. Edmond Locard is known as the french Sherlock Holmes, and is a pioneer
+of forensic science.
+Locard invented the "Locard's Exchange Principle" which states that:
+The perpetrator of a crime will bring something into the crime scene
+and leave with something from it, and both of these things can be
+used as forensic evidence.
+
+This principle is also true in digital forensic.
+
+In forensic science it is important to talk about "Chain of Custody"
+that refers to the chronological documentation or paper trail that
+records the sequence of custody, control, transfer, analysis and
+deposition of physical or electronic evidence.
+
+So the chain of custody is a document which reconstructs what has been
+done with the evidence.
+
+It is often a process that has been required for evidence to be
+shown legally in court.
+
+Some of the most common tools used in digital forensics are:
+- Hardware:
+    - Faraday Cage (isolate radio devices, wifi/phone, etc...)
+    - Forensic laptops and power supplies, tool sets,
+      digital cameras, acse folder, blank forms,
+      evidence collection and packaging supplies, empty HD,
+      hardware with blockers
+- Software:
+    - Volatility
+    - FTK
+    - EnCase
+    - dd
+    - Autopsy (the Sleuth Kit)
+    - Bulk Extractor and many more

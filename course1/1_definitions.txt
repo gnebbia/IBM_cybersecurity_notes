@@ -12,13 +12,26 @@ are known as the **CIA Triad**.
     is synonymous with privacy. Confidentiality measures
     prevent data from falling into the hands of people who do not have
     authorization to access said information;
+    Confidentiality is often obtained with encryption techniques
+    and enforced with access controls (authentication,authorization)
+    and physical security.
 - Integrity
     is about making sure information is accurate and
     always remains the same;
+    Integrity is generally checked by using hash functions.
 - Availability
     is about keeping system working and requires routine
     maintenance and upgrading of hardware, software and operating system
     environments;
+    Availability is ensured in different ways, e.g., backups, RAID,
+    clusters of servers, ISP redundancy (more than one internet connection),
+    UPS.
+
+Another key term used is Non-Repudiation, that is, a valid proof of the
+identity of the data sender or receiver.
+Technical implementations are performed through:
+- Digital Signatures
+- Logs
 
 ---] 1.1 - Main Terms
 
